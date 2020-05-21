@@ -90,7 +90,7 @@ class SearchableSelect extends Select
             }
 
             $row = $model->where($this->meta["valueField"], $value)->first();
-
+            $labelValue = null;
             if($row) {
                 $labelValue = $row->{$this->meta["label"]};
             }
